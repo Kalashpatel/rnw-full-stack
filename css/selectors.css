@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    user-select: none;
+}
 h1{
     text-align: center;
     margin: 20px 0;
@@ -44,3 +47,31 @@ h1{
     margin: 5px 0;
     color: darkred;
 }
+.flower-list {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(170, 170, 8);
+    border: 1px solid #ec4747;
+    width: 300px;
+}
+.flower-list li:first-child{
+    color: darkred;
+    margin: 5px 0;
+}
+ul li:nth-child(3){
+    color: darkred;
+    margin: 5px 0;
+    font-family: 'Playwrite IT Moderna';
+}
+ul li:nth-last-child(2){
+    color: rgb(142, 43, 234);
+    margin: 5px 0;
+    font-family: 'Playwrite IT Moderna';
+}
+
+::selection {
+    background: yellow; /* Change this to your desired background color */
+    color: black; /* Change this to your desired text color */
+}
+

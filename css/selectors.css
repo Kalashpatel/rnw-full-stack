@@ -8,11 +8,39 @@ h1{
     margin: 20px 0;
     color: blueviolet;
 }
-div p{
+.box1 > p{
     color: red;
     height: 300px;
     width: 300px;
     background-color: lightcoral;
     margin: 20px auto;
     padding: 20px;
+}
+.box1 > .content {
+    color: red;
+    height: 300px;
+    width: 300px;
+    background-color: lightcoral;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.food-list {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightyellow;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+.food-list h2 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+.food-list ul  {
+    list-style-type: none;
+}
+.food-list li:last-child {
+    margin: 5px 0;
+    color: darkred;
 }

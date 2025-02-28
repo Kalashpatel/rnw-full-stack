@@ -23,7 +23,7 @@ h2{
     width: 300px;
     height: 300px;
     background-color: green;
-    /* position: relative; */
+    position: relative;
     left: 10px;
 }
 .circle{
@@ -34,5 +34,33 @@ h2{
     position: absolute;
     top: 50%;
     left: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+}
+.door{
+    width: 500px;
+    height: 700px;
+    background-color: rgb(238, 238, 203);
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid black;
+    transition: all 2s;
+}
+.single-door{
+    width: 50%;
+    height: 700px;
+    background-color: brown;
+    position: absolute;
+}
+.left{
+    left: 0;
+    transform-origin: left;
+}
+.right{
+    right: 0;
+    background-color: saddlebrown;
+    transform-origin: right;
+}
+.door .single-door:hover{
+    transform: rotatey(60deg);
 }

@@ -38,29 +38,55 @@ h2{
     transform: translate(-50%, -50%);
 }
 .door{
+    position: relative;
     width: 500px;
     height: 700px;
     background-color: rgb(238, 238, 203);
     margin: 20px auto;
-    position: relative;
+    /* overflow: hidden; */
     border: 2px solid black;
-    transition: all 2s;
+    perspective: 1000px;
+    
 }
 .single-door{
     width: 50%;
-    height: 700px;
+    height: 100%;
     background-color: brown;
     position: absolute;
+    transition: transform 2s;
+    perspective: 1000px;
 }
 .left{
     left: 0;
-    transform-origin: left;
+    transform-origin: left center;
 }
 .right{
     right: 0;
     background-color: saddlebrown;
-    transform-origin: right;
+    transform-origin: right center;
 }
-.door .single-door:hover{
-    transform: rotatey(60deg);
+.door:hover .single-door.left{
+    transform: rotatey(90deg);
+}
+
+.door:hover .single-door.right{
+    transform: rotatey(-90deg);
+}
+.welcome{
+    width: 100%;
+    height: 100px;
+    color: rgb(17, 16, 16);
+    margin: 300px auto;
+    font-size: 70px;
+    font-family: 'WindSong';
+    background-color: rgb(238, 238, 203);
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    text-align: center;
+    line-height: 100px;
+    /* transform: rotatex(50deg); */
+    /* transform-origin: center center; */
+    /* margin-bottom: 0; */
+    perspective: 1000px;
 }

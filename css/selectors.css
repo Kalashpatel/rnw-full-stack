@@ -1,84 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-  user-select: none;
+body{
+    user-select: none;
 }
-h1 {
-  text-align: center;
-  margin: 20px 0;
-  color: blueviolet;
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: blueviolet;
 }
-.box1  {
-  color: red;
-  background-color: lightcoral;
-  margin: 20px auto;
-  padding: 20px;
-    width: 400px;
+.box1 > p{
+    color: red;
     height: 300px;
+    width: 300px;
+    background-color: lightcoral;
+    margin: 20px auto;
+    padding: 20px;
 }
 .box1 > .content {
-  /* color: rgb(34, 0, 255);
-  height: 300px;
-  width: 400px;
-  background-color: lightcoral; */
-  margin: 20px auto;
-  padding: 20px;
-}
-.box1  ul {
-    font-family: 'Rouge Script';
-}
-.box1 ul li:not(:last-child){
-  color: darkred;
-  margin: 5px 0;
-  font-family: "Playwrite IT Moderna";
+    color: red;
+    height: 300px;
+    width: 300px;
+    background-color: lightcoral;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 .food-list {
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: lightyellow;
-  border: 1px solid #ccc;
-  width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightyellow;
+    border: 1px solid #ccc;
+    width: 300px;
 }
 .food-list h2 {
-  color: darkgreen;
-  margin-bottom: 10px;
+    color: darkgreen;
+    margin-bottom: 10px;
 }
-.food-list ul {
-  list-style-type: none;
+.food-list ul  {
+    list-style-type: none;
 }
 .food-list li:last-child {
-  margin: 5px 0;
-  color: darkred;
+    margin: 5px 0;
+    color: darkred;
 }
 .flower-list {
-  text-align: center;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: rgb(170, 170, 8);
-  border: 1px solid #ec4747;
-  width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(170, 170, 8);
+    border: 1px solid #ec4747;
+    width: 300px;
 }
-.flower-list li:first-child {
-  color: darkred;
-  margin: 5px 0;
+.flower-list li:first-child{
+    color: darkred;
+    margin: 5px 0;
 }
-ul li:nth-child(3) {
-  color: darkred;
-  margin: 5px 0;
-  font-family: "Playwrite IT Moderna";
+ul li:nth-child(3){
+    color: darkred;
+    margin: 5px 0;
+    font-family: 'Playwrite IT Moderna';
 }
-ul li:nth-last-child(2) {
-  color: rgb(142, 43, 234);
-  margin: 5px 0;
-  font-family: "Playwrite IT Moderna";
+ul li:nth-last-child(2){
+    color: rgb(142, 43, 234);
+    margin: 5px 0;
+    font-family: 'Playwrite IT Moderna';
 }
 
 ::selection {
-  background: yellow; /* Change this to your desired background color */
-  color: black; /* Change this to your desired text color */
+    background: yellow; /* Change this to your desired background color */
+    color: black; /* Change this to your desired text color */
 }
+

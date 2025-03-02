@@ -102,19 +102,29 @@ h2{
 }
 .welcome{
     width: 100%;
-    height: 100px;
-    color: rgb(17, 16, 16);
+    height: 150px;
+    border-radius: 20%;
+    color: rgb(235, 28, 28);
     margin: 300px auto;
-    font-size: 70px;
-    font-family: 'WindSong';
-    background-color: rgb(238, 238, 203);
-    overflow: hidden;
+    font-size: 50px;
+    line-height: 200px;
+    font-family: 'WindSong'; 
+    background-color: rgb(24, 24, 22);
+    /* overflow: hidden; */
     position: absolute;
+    /* bottom: 0; */
+    /* left: 25%; */
     z-index: -1;
     text-align: center;
-    line-height: 100px;
-    /* transform: rotatex(50deg); */
-    /* transform-origin: center center; */
-    /* margin-bottom: 0; */
+    line-height: 150px;
+    /* transform: rotateX(30deg);  */
+    transform-origin: center center;
+    margin-bottom: 0;
     perspective: 1000px;
+    transition: transform 2s, z-index 2s;
+}
+
+.door:hover .welcome {
+    transform:scaleX(90deg);
+    z-index: 1;
 }

@@ -10,8 +10,8 @@ h1{
     color: #e81212;
 }
 .container{
-    margin-left: 30px;
-    text-align: center; /* Add this line */
+    margin-left: 0px;
+    
 }
 .container h2{
     position: relative;

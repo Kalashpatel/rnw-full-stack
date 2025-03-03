@@ -1,85 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h1{
-    text-align: center;
-    margin: 20px;
-    font-size: 2.5rem;
-    color: #e81212;
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2.5rem;
+  color: #e81212;
 }
-.container{
-    margin-left: 0px;
-    
+.container {
+  margin-left: 0px;
 }
-.container h2{
-    position: relative;
-    text-align: center;
-    margin: 10px;
-    font-size: 1.5rem;
-    color: #6eabc5;
-    display: inline-block;
-    padding: 10px;
-    margin-left: 30%;
-    top: 0;
+.container h2 {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5rem;
+  color: #6eabc5;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 30%;
+  top: 0;
 }
-.container h2::after{
-    position: absolute;
-    content: "-Albert Einstein";
-    display: inline-block;
-    top: 55px;
-    left: 90px;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
+.container h2::after {
+  position: absolute;
+  content: "-Albert Einstein";
+  display: inline-block;
+  top: 55px;
+  left: 90px;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
-.container h2::before{
-    position: absolute;
-    display: inline-block;
-    content: " ";
-    width: 100px;
-    height: 100px;
-    background-color: #000000;
-    background-image: url(../images/einstein.jpeg);
-    background-size: cover;
-    background-position: center;
-    margin-right: 80px;
-    transform: translate(-110%, -50%);
-    border-radius: 50%;
-    top: 35px;
+.container h2::before {
+  position: absolute;
+  display: inline-block;
+  content: " ";
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  background-image: url(../images/einstein.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 80px;
+  transform: translate(-110%, -50%);
+  border-radius: 50%;
+  top: 35px;
 }
 
-.about{
-    text-align: center;
-    position: relative;
+.about {
+  text-align: center;
+  position: relative;
 }
-.about h2{
-    margin-top: 30px;
-    font-size: 40px;
-    color: #a3076f;
-    text-decoration: underline;
-    text-decoration-color: rebeccapurple;
-    text-decoration-style: dotted;
+.about h2 {
+  margin-top: 30px;
+  font-size: 40px;
+  color: #a3076f;
+  text-decoration: underline;
+  text-decoration-color: rebeccapurple;
+  text-decoration-style: dotted;
 }
-.about i{
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 25px;
-    color: #e81212;
-    z-index: 2;
-    animation: heart 1s ease infinite;
+.about i {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+  color: #e81212;
+  z-index: 2;
+  animation: heart 1s ease infinite;
 }
 .about i::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    background-color: #100f0f;
-    top: 12px;
-    z-index: -2;
-    left: 30px;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #100f0f;
+  top: 12px;
+  z-index: -2;
+  left: 30px;
 }
 /* .about i::before{
     content: "";
@@ -91,54 +90,106 @@ h1{
     
     left: 30px;
 } */
-@keyframes heart{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-.style{
-    text-align: center;
-    margin: 70px auto;
+.style {
+  text-align: center;
+  margin: 70px auto;
+  color: rgb(20, 77, 220);
+  font-size: 30px;
+  position: relative;
 }
-.style h2{
-    font-size: 40px;
-    color: #038820;
-    position: relative;
+.style h2 {
+  position: relative;
 }
-.style .red-line{
+.style .red-line {
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  background-color: #e81212;
+  margin: 10px auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.style .red-line::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -70px;
+  height: 3px;
+  width: 70px;
+  background-color: #e81212;
+}
+.style .red-line::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -70px;
+  height: 3px;
+  width: 70px;
+  background-color: #e81212;
+}
+.imgbox {
+  margin: 50px auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/deer.jpg);
+  background-size: cover;
+  border:  10px ;
+}
+
+.border{
     position: absolute;
+    width: 280px;
+    height: 280px;
+    border: solid 2px #fcf7f7;
     display: inline-block;
-    height: 8px;
-    width: 50px;
-    background-color: #e81212;
-    margin: 10px auto;
-    left: 48%;
+    top: 10px;
+    left: 10px;
+    right: 5px;
+    bottom: 5px;
+    transition: all 1s ease;
+    /* transform: translate(-50%, -50%); */
+    z-index: -1;
 }
-.style .red-line::before{
-    content: "";
-    position: absolute;
-    /* display: inline-block; */
-    transform: translatex(-50%);
-    top: 3px;
-    left: -35px;
-    height: 3px;
-    width: 70px;
-    background-color:#f44e4e;;
+.imgbox:hover .border{
+    z-index: 1;
 }
-.style .red-line::after{
-    content: "";
+.imgbox h3{
     position: absolute;
-    /* display: inline-block; */
-    transform: translatex(50%);
-    top: 3px;
-    right: -35.5px;
-    height: 3px;
-    width: 70px;
-    background-color: #f44e4e;
+    text-align: center;
+    top: 33%;
+    left: 27%;
+    transition: translate(-30%, -30%);
+    font-size: 70px;
+    color: aliceblue;
+    font-family: 'WindSong';
+    opacity: 0; 
+    transition: all 1s ease;
+}
+.imgbox:hover h3{
+    opacity: 1;
+}   
+.imgbox::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1);
+  transition: all 1s ease;
+  opacity: 0;
+}
+.imgbox:hover::before {
+  opacity: 1;
 }

@@ -74,7 +74,7 @@ h2{
     background-color: brown;
     position: absolute;
     transition: transform 2s;
-    perspective: 1000px; 
+    perspective: 1000px;
 }
 .left{
     left: 0;
@@ -125,6 +125,6 @@ h2{
 }
 
 .door:hover .welcome {
-    transform:scaleX(90deg);
+    transform: scale(1.1);
     z-index: 1;
 }

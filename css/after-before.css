@@ -61,36 +61,36 @@ h1 {
   text-decoration-color: rebeccapurple;
   text-decoration-style: dotted;
 }
-.about i{
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  transform: translate(-50%);
-  font-size: 25px;
-  color: #e81212;
-  z-index: 2;
+.about span{
+  display: inline-block;
+  position: relative;
+  padding: 0px 10px;
+}
+.about span i{
+  display: inline-block;
   animation: heart 1s ease infinite;
 }
-.about i::after {
-  content: "";
+.about span::before{
   position: absolute;
-  width: 50px;
-  height: 5px;
-  background-color: #100f0f;
-  top: 12px;
-  z-index: -2;
-  left: 30px;
+  content: '';
+  width: 55px;
+  height: 3px;
+  background-color: #000000;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
-/* .about i::before {
-    content: "";
-    position: absolute; 
-    width: 50px;
-    height: 5px;
-    background-color: #100f0f;
-    top: 12px;
-    
-    left: 30px;
-}  */
+.about span::after{
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 3px;
+  background-color: #000000;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @keyframes heart {
   0% {
     transform: scale(1);

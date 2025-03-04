@@ -266,7 +266,7 @@ h1 {
   height: 500px;
   background-image: url(../images/food.jpg);
   background-size: cover;
-  margin: 50px auto;
+  margin: 70px auto;
   position: relative;
   transition: all 0.5s ease-in-out;
   border-radius: 10%;
@@ -359,6 +359,41 @@ h1 {
 .food:hover .food-box a:last-child{
   top: 80%;
 }
+.button {
+  position: relative;
+  margin: 30px auto;
+  width: 150px;
+  height: 50px;
+  background-color: aquamarine;
+  text-align: center;
+  padding: 5px;
+  line-height: 40px;
+  border-radius: 10%;
+  transition: all 0.5s ease;
+  border: solid 2px aquamarine;
+  transition: all 0.5s ease;
+}
+
+.button .effect-3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: color 0.5s ease;
+}
+
+.button:hover {
+  background-color: white;
+  border: solid 2px aquamarine;
+  transform: scale(1.2);
+}
+
+.button:hover .effect-3 a {
+  color: aquamarine;
+}
+
+
+
+
 
 
 

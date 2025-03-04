@@ -101,30 +101,15 @@ h2{
     transform: rotatey(-90deg);
 }
 .welcome{
-    width: 100%;
-    height: 150px;
-    border-radius: 20%;
-    color: rgb(235, 28, 28);
-    margin: 300px auto;
-    font-size: 50px;
-    line-height: 200px;
-    font-family: 'WindSong'; 
-    background-color: rgb(24, 24, 22);
-    /* overflow: hidden; */
     position: absolute;
-    /* bottom: 0; */
-    /* left: 25%; */
+    width: 100%;
+    height: 200px;
+    color: rgb(235, 28, 28);
+    /* margin: 300px auto; */
+    font-size: 70px;
+    line-height: 200px;
+    font-family: 'WindSong';
     z-index: -1;
-    text-align: center;
-    line-height: 150px;
-    /* transform: rotateX(30deg);  */
-    transform-origin: center center;
-    margin-bottom: 0;
-    perspective: 1000px;
-    transition: transform 2s, z-index 2s ease-in-out;
-}
-
-.door:hover .welcome {
-    transform: scale(1.1);
-    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
 }

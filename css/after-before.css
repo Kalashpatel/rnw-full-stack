@@ -69,6 +69,7 @@ h1 {
 .about span i{
   display: inline-block;
   animation: heart 1s ease infinite;
+  color: #e81212;
 }
 .about span::before{
   position: absolute;

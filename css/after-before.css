@@ -384,7 +384,7 @@ h1 {
 .button:hover {
   background-color: white;
   border: solid 2px aquamarine;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .button:hover .effect-3 a {

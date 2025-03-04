@@ -266,11 +266,100 @@ h1 {
   height: 500px;
   background-image: url(../images/food.jpg);
   background-size: cover;
-  margin: 20px auto;
+  margin: 50px auto;
   position: relative;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10%;
+}
+.food:hover {
+  transform: scale(1.2);
 }
 .food-box{
   width: 100%;
   height: 100%;
-
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  border-radius: 10%;
+  transition-delay: 0.5s;
+  transition: all 0.5s ease;
 }
+.food:hover .food-box{
+  opacity: 1;
+} 
+.effect-1::before{
+  content: "";
+  width: 3px;
+  height: 450px;
+  background-color: rgba(252, 249, 249, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.effect-1::after{
+  content: "";
+  width: 3px;
+  height: 450px;
+  background-color: rgba(252, 249, 249, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.food:hover .effect-1::before{
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.food:hover .effect-1::after{
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.food .food-box a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.food .food-box a:first-child{
+  position: absolute;
+  top: 35%;
+  transition: all 0.7s ease;
+}
+.food .food-box a:nth-child(2){
+  position: absolute;
+  right: 10%;
+  
+  transition: all 0.7s ease; /* Add transition */
+}
+.food .food-box a:nth-child(3){
+  position: absolute;
+  left: 65%;
+  transition: all 0.7s ease;
+}
+.food .food-box a:last-child{
+  position: absolute;
+  top: 65%;
+  transition: all 0.7s ease;
+}
+.food:hover .food-box a:first-child{
+  top: 20%;
+}
+.food:hover .food-box a:nth-child(2){
+  right: -20%;
+}
+.food:hover .food-box a:nth-child(3){
+  left: 80%;
+}
+.food:hover .food-box a:last-child{
+  top: 80%;
+}
+
+
+
+

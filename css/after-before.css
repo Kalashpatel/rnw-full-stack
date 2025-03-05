@@ -521,7 +521,74 @@ h1 {
 .imgbox3:hover p{
   opacity: 1;
 }
-
+.imgbox4{
+  margin: 50px auto;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-image: url(../images/sunflower.jpg);
+  background-size: cover;
+  cursor: pointer;
+}
+.imgbox4::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(2, 238, 30, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.imgbox4:hover::before{
+  opacity: 1;
+}
+.imgbox4 .flower{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  /* background-color: rgba(232, 18, 18, 0.3); */
+  top: 5%;
+  left: 5%;
+  
+}
+.imgbox4 .flower h2{
+  font-size: 50px;
+  color: #fff;
+}
+.imgbox4 .flower::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  top: 12%;
+  left: 0%;
+  transition: all 0.5s ease;
+}
+.imgbox4:hover .flower::before{
+  width: 100%;
+}
+.imgbox4 .flower::after{
+  content: "Keep your face to the sunshine and you cannot see the shadows.";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  /* background-color: darkblue; */
+  top: 16%;
+  font-size: 30px;
+  color: white;
+  transform-origin: right;
+  transition: all 0.8s ease;
+  transform: translateX(106%);
+  overflow: hidden;
+  opacity: 0;
+}
+.imgbox4:hover .flower::after{
+  transform: translateX(0%);
+  opacity: 1;
+}
 
 
 

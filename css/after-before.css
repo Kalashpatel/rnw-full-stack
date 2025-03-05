@@ -326,19 +326,19 @@ h1 {
   transition: all 0.7s ease;
 }
 .food .food-box a:first-child{
-  top: 20%;
+  top: 40%;
   left: 50%;
 }
 .food .food-box a:nth-child(2){
   top: 50%;
-  left: 20%;
+  left: 40%;
 }
 .food .food-box a:nth-child(3){
   top: 50%;
-  right: 15%;
+  right: 35%;
 }
 .food .food-box a:last-child{
-  bottom: 10%;
+  bottom: 30%;
   left: 50%;
 }
 .food:hover .food-box a:first-child{
@@ -402,8 +402,8 @@ h1 {
   font-size: 30px;
   font-weight: 700;
 }
-.button2::before,
-.button2::after {
+.button2 a::before,
+.button2 a::after {
   content: "";
   position: absolute;
   width: 20px;  /* Short width initially */
@@ -414,7 +414,7 @@ h1 {
 }
 
 /* Top-left border */
-.button2::before {
+.button2 a::before {
   top: 0;
   left: 0;
   border-right: none;
@@ -422,7 +422,7 @@ h1 {
 }
 
 /* Bottom-right border */
-.button2::after {
+.button2 a::after {
   bottom: 0;
   right: 0;
   border-left: none;
@@ -430,8 +430,8 @@ h1 {
 }
 
 /* Hover effect to expand the borders */
-.button2:hover::before,
-.button2:hover::after {
+.button2 a:hover::before,
+.button2 a:hover::after {
   width: 100%;
   height: 100%;
 }

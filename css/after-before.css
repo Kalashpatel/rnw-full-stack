@@ -369,7 +369,6 @@ h1 {
   padding: 5px;
   line-height: 40px;
   border-radius: 10%;
-  transition: all 0.5s ease;
   border: solid 2px aquamarine;
   transition: all 0.5s ease;
 }
@@ -383,7 +382,6 @@ h1 {
 
 .button:hover {
   background-color: white;
-  border: solid 2px aquamarine;
   transform: scale(1.1);
 }
 
@@ -399,7 +397,6 @@ h1 {
   text-align: center;
   line-height: 70px;
   font-size: 20px;
-  color: aquamarine;
   border: none;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -407,7 +404,7 @@ h1 {
 }
 .button2 a{
   text-decoration: none;
-  color: aquamarine;
+  color: rgb(9, 20, 243);
   font-size: 30px;
   font-weight: 700;
 }
@@ -418,7 +415,7 @@ h1 {
   width: 20px;  /* Short width initially */
   height: 20px; /* Short height initially */
   background: none;
-  border: 2px solid aquamarine;
+  border: 2px solid  rgb(9, 20, 243);
   transition: all 0.4s ease-in-out;
 }
 

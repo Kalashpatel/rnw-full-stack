@@ -320,44 +320,38 @@ h1 {
 }
 .food .food-box a{
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
   color: rgba(255, 255, 255, 0.8);
+  transition: all 0.7s ease;
 }
 .food .food-box a:first-child{
-  position: absolute;
-  top: 35%;
-  transition: all 0.7s ease;
+  top: 20%;
+  left: 50%;
 }
 .food .food-box a:nth-child(2){
-  position: absolute;
-  right: 10%;
-  
-  transition: all 0.7s ease; /* Add transition */
+  top: 50%;
+  left: 20%;
 }
 .food .food-box a:nth-child(3){
-  position: absolute;
-  left: 65%;
-  transition: all 0.7s ease;
+  top: 50%;
+  right: 15%;
 }
 .food .food-box a:last-child{
-  position: absolute;
-  top: 65%;
-  transition: all 0.7s ease;
+  bottom: 10%;
+  left: 50%;
 }
 .food:hover .food-box a:first-child{
-  top: 20%;
+  top: 30%;
 }
 .food:hover .food-box a:nth-child(2){
-  right: -20%;
+  left: 30%;
 }
 .food:hover .food-box a:nth-child(3){
-  left: 80%;
+  right: 25%;
 }
 .food:hover .food-box a:last-child{
-  top: 80%;
+  bottom: 20%;
 }
 .button {
   position: relative;

@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color:rgb(247, 233, 211) ;
+}
+h1{
+    text-align: center;
+    margin: 30px;
+    color: darkgoldenrod;
+    font-size: 70px;
+    font-family: 'Fleur De Leah';
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+.container{
+    display: flex;
+    width: 1500px;
+    height: auto;
+    background-color: bisque;
+    margin: 20px auto;
+    padding: 5px;
+    border: solid 2px burlywood;
+}
+.flow{
+    flex-flow: wrap row;
+}
+.imgbox {
+    margin: 50px auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/deer.jpg);
+    background-size: cover;
+    border-radius: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .imgbox:hover {
+    transform: scale(1.3);
+  }
+  
+  .imgbox h3 {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgba(240, 248, 255, 0.8);
+    font-family: 'WindSong';
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .border {
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .imgbox:hover .border {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(5); /* Move outward */
+  }
+  
+  .imgbox:hover h3 {
+    opacity: 1;
+  }
+  
+  .imgbox::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .imgbox:hover::before {
+    opacity: 1;
+  }
+  .imgbox1 {
+    margin: 50px auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/waterfall.jpg);
+    background-size: cover;
+    border:  10px ;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  
+  .border1{
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border: solid 2px #fcf7f7;
+      border-radius: 10%;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+      transition: all 1s ease;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+  }
+  .imgbox1:hover .border1{
+      z-index: 1;
+  }
+  .imgbox1 h3{
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      color: aliceblue;
+      font-family: 'WindSong';
+      opacity: 0; 
+      transition: all 1s ease;
+  }
+  .imgbox1:hover h3{
+      opacity: 1;
+  }   
+  .imgbox1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1);
+    transition: all 1s ease;
+    opacity: 0;
+    border-radius: 10%;
+  }
+  .imgbox1:hover::before {
+    opacity: 1;
+  }
+  .food{
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/food.jpg);
+    background-size: cover;
+    margin: 70px auto;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10%;
+  }
+  .food:hover {
+    transform: scale(1.2);
+  }
+  .food-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    border-radius: 10%;
+    transition-delay: 0.5s;
+    transition: all 0.5s ease;
+  }
+  .food:hover .food-box{
+    opacity: 1;
+  } 
+  .effect-1::before{
+    content: "";
+    width: 3px;
+    height: 450px;
+    background-color: rgba(252, 249, 249, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .effect-1::after{
+    content: "";
+    width: 3px;
+    height: 450px;
+    background-color: rgba(252, 249, 249, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .food:hover .effect-1::before{
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .food:hover .effect-1::after{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .food .food-box a{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.7s ease;
+  }
+  .food .food-box a:first-child{
+    top: 40%;
+    left: 50%;
+  }
+  .food .food-box a:nth-child(2){
+    top: 50%;
+    left: 40%;
+  }
+  .food .food-box a:nth-child(3){
+    top: 50%;
+    right: 35%;
+  }
+  .food .food-box a:last-child{
+    bottom: 30%;
+    left: 50%;
+  }
+  .food:hover .food-box a:first-child{
+    top: 30%;
+  }
+  .food:hover .food-box a:nth-child(2){
+    left: 30%;
+  }
+  .food:hover .food-box a:nth-child(3){
+    right: 25%;
+  }
+  .food:hover .food-box a:last-child{
+    bottom: 20%;
+  }
+  .imgbox3{
+    margin: 50px auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url(../images/field.jpg);
+    background-size: cover;
+    border:  10px;
+    cursor: pointer;
+  }
+  .imgbox3 .title{
+    position: relative;
+    display: flex;
+    height: 250px;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    align-items: center;
+    color: #fff;
+    /* border: solid 3px white;
+    border-radius: 10px;
+    
+    gap: 5px;
+    transition: all 0.5s ease; */
+  }
+  .imgbox3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 105, 30, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .imgbox3:hover::before{
+    opacity: 1;
+  }
+  .effect{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border: solid 2px white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .imgbox3:hover .title .effect{
+    top: 140%;
+    bottom: 5%;
+    height: 150px;
+  }
+  .imgbox3 .title span{
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 100px;
+  }
+  .imgbox3 .title h2{
+    
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 500px;
+  }
+  .imgbox3 p{
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    bottom: 5%;
+    left: 5%;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .imgbox3:hover p{
+    opacity: 1;
+  }
+  .imgbox4{
+    margin: 50px auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url(../images/sunflower.jpg);
+    background-size: cover;
+    cursor: pointer;
+  }
+  .imgbox4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 238, 30, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .imgbox4:hover::before{
+    opacity: 1;
+  }
+  .imgbox4 .flower{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    /* background-color: rgba(232, 18, 18, 0.3); */
+    top: 5%;
+    left: 5%;
+    
+  }
+  .imgbox4 .flower h2{
+    font-size: 50px;
+    color: #fff;
+  }
+  .imgbox4 .flower::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    top: 12%;
+    left: 0%;
+    transition: all 0.5s ease;
+  }
+  .imgbox4:hover .flower::before{
+    width: 100%;
+  }
+  .imgbox4 .flower::after{
+    content: "Keep your face to the sunshine and you cannot see the shadows.";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /* background-color: darkblue; */
+    top: 16%;
+    font-size: 30px;
+    color: white;
+    transform-origin: right;
+    transition: all 0.8s ease;
+    transform: translateX(106%);
+    overflow: hidden;
+    opacity: 0;
+  }
+  .imgbox4:hover .flower::after{
+    transform: translateX(0%);
+    opacity: 1;
+  }

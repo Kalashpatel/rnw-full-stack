@@ -580,13 +580,14 @@ h1 {
   font-size: 30px;
   color: white;
   transform-origin: right;
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
   transform: translateX(106%);
   overflow: hidden;
-  opacity: 0;
+  /* opacity: 0; */
 }
 .imgbox4:hover .flower::after{
   transform: translateX(0%);
+  width: 100%;
   opacity: 1;
 }
 

@@ -6,9 +6,17 @@ body {
 }
 
 header {
-    background: #333;
+    background: #ff4d00;
     color: white;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -27,13 +35,20 @@ nav ul li a {
     font-size: 18px;
 }
 
+.hero {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+}
+
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    width: 80%;
     border-bottom: 1px solid #ddd;
 }
 
-.project {
+.course {
     background: #f4f4f4;
     padding: 15px;
     margin: 10px auto;
